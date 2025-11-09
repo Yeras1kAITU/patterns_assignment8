@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class WordDocument {
+public class WordDocument implements Document {
+    @Override
+    public void accept(DocumentVisitor visitor) {
+        visitor.visit(this);
+    }
 }

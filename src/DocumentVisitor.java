@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class DocumentVisitor {
+public interface DocumentVisitor {
+    void visit(WordDocument document);
+    void visit(PdfDocument document);
+    void visit(HtmlDocument document);
 }
