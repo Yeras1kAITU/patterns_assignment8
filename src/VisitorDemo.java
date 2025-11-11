@@ -1,3 +1,9 @@
+import documents.Document;
+import documents.HtmlDocument;
+import documents.PdfDocument;
+import documents.WordDocument;
+import visitors.TextExtractor;
+
 public class VisitorDemo {
     public static void main(String[] args) {
         Document wordDoc = new WordDocument();
